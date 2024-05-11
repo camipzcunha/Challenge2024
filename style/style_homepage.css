@@ -33,10 +33,11 @@ img {
     font-size: 20px;
     padding: 0.75rem 5vw;
     box-shadow: 0 0 30px lightgray;
+    height: 120px;
   }
 
   .nav img{
-    width: 350px;
+    width: 300px;
   }
 
 
@@ -44,26 +45,74 @@ img {
    font-size: 18px;
     display: inline-block;
     list-style: none;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 15px 0px 0px;
 }
 
 li.big-screens{
     padding-left: 1px;
-    padding-right: 1px;
+    padding-right: 3px;
 }
 
   li.big-screens a{
     font-family: 'Mako', sans-serif;
     color: whitesmoke;
     text-decoration: none;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 25px 0px 20px;
     display: inline-block;
    
   }
 
+
+/* Animação de fade */
+li {
+    transition: opacity 0.5s;
+}
+
+li:hover {
+    opacity: 0.7;
+}
+
+.search-container {
+        float: right;
+    }
+
+    input[type="text"] {
+        padding: 6px;
+        margin-top: 8px;
+        margin-right: 16px;
+        border: none;
+        font-size: 17px;
+    }
+
+    input[type="text"]:focus {
+        width: 200px;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input[type="text"]:focus + button {
+        background-color: #ccc;
+        color: black;
+    }
+
+    .search-button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .search-button:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
   .search-bar{
-    width: 200px;
-    height: 50px;
+    width: 180px;
+    height: 30px;
  }
 
  .left-banner h1{
@@ -77,6 +126,8 @@ li.big-screens{
     font-size: 100px;
     padding-left: 40rem;
     margin-top: 800px;
+    color: #496eb7;
+  
  }
 
  .right-bannner{
